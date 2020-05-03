@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validacion de interfase</title>
+	<link rel="stylesheet" href="CSS/formulario.css">
+</head>
+<body>
+
+	<h1>Validacion de interface</h1>
+	
+	<form action="proceso.php" method="post" onsubmit="return validar()">
+		Nombre: <br>
+		<input type="text" name="nombre">
+		<br>
+		<span id="errorNombre"></span>
+		<br>
+
+		Email: <br>
+		<input type="email"	name="email"> 
+		<br>
+		<span id="errorEmail"></span>
+		<br>
+
+		<button>Enviar</button>
+
+	</form>
+
+	<script src="JS/formulario.js"></script>
+	
+	
+</body>
+</html>
